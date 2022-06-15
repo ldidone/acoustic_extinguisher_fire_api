@@ -4,7 +4,10 @@ import pandas as pd
 import pickle
 
 app = FastAPI()
-model = pickle.load(open('model\decision_tree_1.sav', 'rb'))
+
+with open('.\model\decision_tree_1.sav', 'rb') as f:
+    model = pickle.load(f)
+
 STATUS = {
     0: 'NON-EXTINCTION',
     1: 'EXTINTION',
