@@ -5,7 +5,7 @@ import pickle
 
 app = FastAPI()
 
-with open('.\model\decision_tree_1.sav', 'rb') as f:
+with open('decision_tree_1.sav', 'rb') as f:
     model = pickle.load(f)
 
 STATUS = {
