@@ -21,7 +21,7 @@ with open('decision_tree_1.sav', 'rb') as f:
 
 STATUS = {
     0: 'NON-EXTINCTION',
-    1: 'EXTINTION',
+    1: 'EXTINCTION',
 }
 
 class request_body(BaseModel):
