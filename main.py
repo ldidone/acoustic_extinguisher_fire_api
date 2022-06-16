@@ -55,5 +55,6 @@ async def predict(data : request_body):
     prediction_proba = model.predict_proba(x)
     probability_percentage = prediction_proba[0][prediction[0]] * 100
 
-    return {"prediction": result,
+    return {"prediction": str(prediction[0]),
+            "prediction_status": result,
             "probability_percentage": f"{probability_percentage}%" }
