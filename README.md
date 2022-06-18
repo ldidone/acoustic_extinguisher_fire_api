@@ -6,8 +6,7 @@ Code repository to acoustic extinguisher fire API with academic purposes.
 
 - API documentation is available here: https://acousticextinguisherfireapi.herokuapp.com/docs
 
-- Example CURL:
-
+**Exaple Curl:**
 
     curl -X 'POST' \
       'https://acousticextinguisherfireapi.herokuapp.com/predict' \
@@ -21,6 +20,7 @@ Code repository to acoustic extinguisher fire API with academic purposes.
       "airflow": 2.6,
       "frequency": 70
     }'
+	
 
 -------------------------------------------------------------------------
 
